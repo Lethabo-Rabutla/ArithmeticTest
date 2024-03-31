@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Lets do Arithmetic</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form action="ArithmeticOperationServlet.do" method="POST">
+            <table>
+                <tr>
+                    <td><h1>Choose Operation:</h1></td>
+                    <td>
+                        <select name="operation" required="">
+                            <option value="+">Addition</option>
+                            <option value="-">Subtraction</option>
+                            <option value="*">Multiplication</option>
+                            <option value="/">Division</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="Calculate"/></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
